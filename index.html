@@ -1,26 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    
-</head>
-<body>
+
+    <!-- <link rel="stylesheet" href=".qodo/CSS/reset.css" /> -->
+    <link rel="stylesheet" href=".qodo/CSS/styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>BMI Calculator</h1>
+      <h1>BMI Calculator</h1>
+
+      <div class="box1">
+        <h2>Use me safely or you'll be sorry!</h2>
         <div>
-            <label for="Height">Height (in):</label>
-            <input type="number" id="Height" placeholder="Enter Your Height" required>
-        
-            <label for="Weight">Weight (lbs):</label>
-            <input type="number" id="Weight" placeholder="Enter Your Weight" required> 
+          <label for="Height">Height (in):</label>
+          <input
+            type="number"
+            id="Height"
+            placeholder="Enter Your Height"
+            required
+          />
+
+          <label for="Weight">Weight (lbs):</label>
+          <input
+            type="number"
+            id="Weight"
+            placeholder="Enter Your Weight"
+            required
+          />
         </div>
         <button onclick="calculateBMI()">Calculate BMI</button>
         <div id="result"></div>
+      </div>
     </div>
-
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
